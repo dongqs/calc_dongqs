@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'calc_dongqs'
+
+if ARGV.empty?
+  puts "USAGE: calc_dongqs '(1 + 2) * sqrt(4)'"
+else
+  puts Expression.new(ARGV.join(' ')).result
+end
